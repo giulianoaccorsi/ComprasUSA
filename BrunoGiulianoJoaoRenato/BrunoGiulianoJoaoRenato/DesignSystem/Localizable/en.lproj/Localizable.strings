@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  BrunoGiulianoJoaoRenato
+
+  Created by Giuliano Accorsi on 14/02/23.
+  
+*/
+
+"TabBar.List" = "Shopping";
+"TabBar.Adjust" = "Settings";
+"TabBar.Total" = "Total Purchase";
