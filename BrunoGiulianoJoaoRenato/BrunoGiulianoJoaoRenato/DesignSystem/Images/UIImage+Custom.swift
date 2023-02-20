@@ -8,5 +8,5 @@
 import UIKit
 
 extension UIImage {
-    static let placeholderProduct = UIImage(named: "gift")
+    static let placeholderProduct = #imageLiteral(resourceName: "gift")
 }

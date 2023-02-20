@@ -16,8 +16,8 @@ struct ListConverter: ListConvertable {
     func convert(_ product: Product) -> ProductViewModel {
         return ProductViewModel(id: product.objectID,
                                 name: product.name ?? String(),
-                                image: product.photo != nil ? UIImage(data: product.photo ?? Data()) : UIImage(named: "gift"),
-                                value: "\(product.value)".convertValueToFormatedValue())
+                                image: product.photo != nil ? UIImage(data: product.photo ?? Data()) : UIImage.placeholderProduct,
+                                value: "\(product.value)".convertValueToFormatedValue(currencySymbol: "$"))
     }
     
     func convert(_ products: [Product]) -> [ProductViewModel] {

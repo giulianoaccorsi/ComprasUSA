@@ -46,14 +46,18 @@ final class StateService: CoreDataService {
             return []
         }
     }
+
+    func getState(id: NSManagedObjectID) -> State? {
+        let object = context?.object(with: id) as? State
+        return object
+
+    }
     
-    func editState(id: NSManagedObjectID,
-                   name: String,
-                   tax: Double) -> [State] {
+    func editState(id: NSManagedObjectID, newName: String, newTax: Double) -> [State] {
         guard let context = context else { return [] }
         let object = context.object(with: id) as? State
-        object?.name = name
-        object?.tax = tax
+        object?.name = newName
+        object?.tax = newTax
         
         do {
             try context.save()

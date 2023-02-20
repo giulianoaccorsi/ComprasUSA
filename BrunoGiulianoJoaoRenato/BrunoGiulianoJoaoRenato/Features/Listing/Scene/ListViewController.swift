@@ -9,7 +9,7 @@ import UIKit
 
 protocol ListViewControllerDisplayble: AnyObject {
     func displayState(_ state: ListView.State)
-    func displayProductDetail(productViewModel: ProductViewModel)
+    func displayProductDetail(product: Product)
 }
 
 final class ListViewController: UIViewController {
@@ -37,11 +37,19 @@ final class ListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         contentView.delegate = self
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add,
+                                                            target: self, action: #selector(addProduct))
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         viewModel.fetchProducts()
+    }
+
+    @objc private func addProduct() {
+        DispatchQueue.main.async { [weak self] in
+            self?.navigationController?.pushViewController(RegisterFactory.make(product: nil), animated: true)
+        }
     }
 }
 
@@ -62,7 +70,7 @@ extension ListViewController: ListViewControllerDisplayble {
         }
     }
 
-    func displayProductDetail(productViewModel: ProductViewModel) {
-        // Próxima Tela
+    func displayProductDetail(product: Product) {
+        self.navigationController?.pushViewController(RegisterFactory.make(product: product), animated: true)
     }
 }

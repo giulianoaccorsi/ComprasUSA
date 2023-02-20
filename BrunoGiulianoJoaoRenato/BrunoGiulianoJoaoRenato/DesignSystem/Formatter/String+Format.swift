@@ -8,11 +8,11 @@
 import Foundation
 
 extension String {
-    func convertValueToFormatedValue() -> String {
+    func convertValueToFormatedValue(currencySymbol: String) -> String {
         let numberFormatter: NumberFormatter = {
             let formatter = NumberFormatter()
             formatter.numberStyle = .currency
-            formatter.currencySymbol = "$"
+            formatter.currencySymbol = currencySymbol
             formatter.maximumFractionDigits = 2
 
             return formatter

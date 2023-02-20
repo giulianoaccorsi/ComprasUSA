@@ -6,6 +6,36 @@
   
 */
 
+// Mark: Tab Bar
 "TabBar.List" = "Shopping";
 "TabBar.Adjust" = "Settings";
 "TabBar.Total" = "Total Purchase";
+// Mark: EmptyState View
+"EmptyStateView.Text" = "Your list is empty!";
+// Mark: Register View
+"RegisterView.PlaceholderNameProduct" = "Product Name";
+"RegisterView.PlaceholderStateProduct" = "State";
+"RegisterView.PlaceholderValueProduct" = "Value ($)";
+"RegisterView.Button.Register" = "Register";
+"RegisterView.Button.Edit" = "Edit";
+"RegisterView.Switch.Card" = "Card?";
+// Mark: ImagePickerAlertController
+"ImagePickerAlert.photoTitle" = "Choose Photo";
+"ImagePickerAlert.cameraTitle" = "Take Photo";
+"ImagePickerAlert.cancelButton" = "Cancelar";
+// Mark: AdjustView
+"AdjustView.Quotation" = "Dollar quotation (R$):";
+"AdjustView.IOF" = "IOF (%):";
+"AdjustView.LabelTax"= "State Taxes";
+"AdjustView.ButtonState" = "Add State";
+// Mark: AlertState
+"AlertState.Title.Add" = "Add State";
+"AlertState.Title.Edit" = "Edit State";
+"AlertState.Textfield.State" = "State Name";
+"AlertState.Textfield.Tax" = "Tax";
+"AlertState.Button.Add" = "Add";
+"AlertState.Button.Cancel" = "Cancel";
+// Mark: TotalView
+"TotalView.Dollar.Title" = "Total in Dollars";
+"TotalView.Real.Title" = "Total in Reais";
+

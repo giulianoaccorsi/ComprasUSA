@@ -31,7 +31,7 @@ final class ListView: UIView {
         return tableView
     }()
 
-    private let emptyStateView = EmptyStateView(message: "Sua lista está vazia!")
+    private let emptyStateView = EmptyStateView(message: Strings.EmptyStateView.text)
 
     weak var delegate: ListViewDelegate?
 

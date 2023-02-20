@@ -26,7 +26,7 @@ final class ListViewModel {
     }
 
     private func setupProductsToDisplay(products: [Product]) {
-        self.products.append(contentsOf: products)
+        self.products = products
         self.products.count == 0 ? self.display?.displayState(.empty) : self.display?.displayState(.content(viewModels: self.converter.convert(products)))
 
     }
@@ -38,8 +38,7 @@ extension ListViewModel: ListViewModelLogic {
     }
 
     func selectProduct(index: Int) {
-        display?.displayProductDetail(productViewModel: converter.convert(products[index]))
-
+        display?.displayProductDetail(product: products[index])
     }
 
     func swipedToDelete(index: Int) {

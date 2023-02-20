@@ -16,8 +16,8 @@ final class ProductService: CoreDataService {
                      value: Double,
                      isCard: Bool,
                      image: Data?,
-                     state: State) -> [Product] {
-        guard let context = context else {return []}
+                     state: State) {
+        guard let context = context else {return}
         let product = Product(context: context)
         product.name = name
         product.value = value
@@ -26,10 +26,8 @@ final class ProductService: CoreDataService {
         product.state = state
         do {
             try context.save()
-            return loadProducts()
         } catch {
             print("Error - DataManagerProduct - saveProduct()")
-            return []
         }
     }
 
@@ -59,20 +57,18 @@ final class ProductService: CoreDataService {
                    value: Double,
                    isCard: Bool,
                    image: Data?,
-                   state: State) -> [Product] {
-        guard let context = context else { return [] }
+                   state: State) {
+        guard let context = context else { return }
         let object = context.object(with: id) as? Product
         object?.name = name
         object?.value = value
         object?.isCard = isCard
         object?.photo = image
         object?.state = state
-
         do {
             try context.save()
-            return loadProducts()
         } catch {
-            return []
+            return 
         }
     }
 }

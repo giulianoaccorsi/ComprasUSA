@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1908449329A13D7300A5A47C /* PickerViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1908449229A13D7300A5A47C /* PickerViewProvider.swift */; };
+		1908449629A14EEB00A5A47C /* RegisterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1908449529A14EEB00A5A47C /* RegisterFactory.swift */; };
+		1908449929A14F6300A5A47C /* RegisterConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1908449829A14F6300A5A47C /* RegisterConverter.swift */; };
+		1908449B29A15E5400A5A47C /* ImagePickerAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1908449A29A15E5400A5A47C /* ImagePickerAlertController.swift */; };
+		1908449D29A175CE00A5A47C /* StateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1908449C29A175CE00A5A47C /* StateCell.swift */; };
+		190844A029A1800100A5A47C /* AdjustConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1908449F29A1800100A5A47C /* AdjustConverter.swift */; };
+		190844A329A1836D00A5A47C /* AdjustFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190844A229A1836D00A5A47C /* AdjustFactory.swift */; };
+		190844A529A187CB00A5A47C /* AlertState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190844A429A187CB00A5A47C /* AlertState.swift */; };
+		1954BFDF29A2978C006B97B7 /* TotalFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1954BFDE29A2978C006B97B7 /* TotalFactory.swift */; };
+		1954BFE229A29E03006B97B7 /* TotalConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1954BFE129A29E03006B97B7 /* TotalConverter.swift */; };
 		197EF376299BCAE30008C28C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197EF375299BCAE30008C28C /* AppDelegate.swift */; };
 		197EF378299BCAE30008C28C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197EF377299BCAE30008C28C /* SceneDelegate.swift */; };
 		197EF37A299BCAE30008C28C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197EF379299BCAE30008C28C /* ListViewController.swift */; };
@@ -39,9 +49,21 @@
 		197EF3DF299C188D0008C28C /* UIImage+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197EF3DE299C188D0008C28C /* UIImage+Custom.swift */; };
 		197EF3E3299C191F0008C28C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 197EF3E5299C191F0008C28C /* Localizable.strings */; };
 		197EF3E9299C1AA40008C28C /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197EF3E8299C1AA40008C28C /* Localizable.swift */; };
+		1996795129A1CC840045D7D7 /* ProductSavedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1996795029A1CC840045D7D7 /* ProductSavedViewModel.swift */; };
+		1996795329A1E3F50045D7D7 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1996795229A1E3F50045D7D7 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1908449229A13D7300A5A47C /* PickerViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewProvider.swift; sourceTree = "<group>"; };
+		1908449529A14EEB00A5A47C /* RegisterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFactory.swift; sourceTree = "<group>"; };
+		1908449829A14F6300A5A47C /* RegisterConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterConverter.swift; sourceTree = "<group>"; };
+		1908449A29A15E5400A5A47C /* ImagePickerAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerAlertController.swift; sourceTree = "<group>"; };
+		1908449C29A175CE00A5A47C /* StateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateCell.swift; sourceTree = "<group>"; };
+		1908449F29A1800100A5A47C /* AdjustConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustConverter.swift; sourceTree = "<group>"; };
+		190844A229A1836D00A5A47C /* AdjustFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustFactory.swift; sourceTree = "<group>"; };
+		190844A429A187CB00A5A47C /* AlertState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertState.swift; sourceTree = "<group>"; };
+		1954BFDE29A2978C006B97B7 /* TotalFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalFactory.swift; sourceTree = "<group>"; };
+		1954BFE129A29E03006B97B7 /* TotalConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalConverter.swift; sourceTree = "<group>"; };
 		197EF372299BCAE30008C28C /* BrunoGiulianoJoaoRenato.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrunoGiulianoJoaoRenato.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		197EF375299BCAE30008C28C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		197EF377299BCAE30008C28C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +100,8 @@
 		197EF3E6299C19760008C28C /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		197EF3E7299C19760008C28C /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		197EF3E8299C1AA40008C28C /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		1996795029A1CC840045D7D7 /* ProductSavedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSavedViewModel.swift; sourceTree = "<group>"; };
+		1996795229A1E3F50045D7D7 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +115,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1908449429A14EDF00A5A47C /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				1908449529A14EEB00A5A47C /* RegisterFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		1908449729A14F5500A5A47C /* Converter */ = {
+			isa = PBXGroup;
+			children = (
+				1908449829A14F6300A5A47C /* RegisterConverter.swift */,
+			);
+			path = Converter;
+			sourceTree = "<group>";
+		};
+		1908449E29A17FF200A5A47C /* Converter */ = {
+			isa = PBXGroup;
+			children = (
+				1908449F29A1800100A5A47C /* AdjustConverter.swift */,
+			);
+			path = Converter;
+			sourceTree = "<group>";
+		};
+		190844A129A1836500A5A47C /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				190844A229A1836D00A5A47C /* AdjustFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		1954BFE029A29DFB006B97B7 /* Converter */ = {
+			isa = PBXGroup;
+			children = (
+				1954BFE129A29E03006B97B7 /* TotalConverter.swift */,
+			);
+			path = Converter;
+			sourceTree = "<group>";
+		};
 		197EF369299BCAE30008C28C = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +190,7 @@
 			children = (
 				197EF37E299BCAE40008C28C /* Assets.xcassets */,
 				197EF380299BCAE40008C28C /* LaunchScreen.storyboard */,
+				1996795229A1E3F50045D7D7 /* Settings.bundle */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -184,8 +249,9 @@
 		197EF397299BD6770008C28C /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				197EF39A299BD6A00008C28C /* Controller */,
-				197EF399299BD69C0008C28C /* ViewModel */,
+				1908449729A14F5500A5A47C /* Converter */,
+				1908449429A14EDF00A5A47C /* Factory */,
+				197EF39A299BD6A00008C28C /* Scene */,
 				197EF398299BD6970008C28C /* View */,
 			);
 			path = Register;
@@ -194,93 +260,86 @@
 		197EF398299BD6970008C28C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1908449A29A15E5400A5A47C /* ImagePickerAlertController.swift */,
 				197EF39F299BD6BE0008C28C /* RegisterView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		197EF399299BD69C0008C28C /* ViewModel */ = {
+		197EF39A299BD6A00008C28C /* Scene */ = {
 			isa = PBXGroup;
 			children = (
 				197EF39D299BD6BA0008C28C /* RegisterViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		197EF39A299BD6A00008C28C /* Controller */ = {
-			isa = PBXGroup;
-			children = (
 				197EF39B299BD6B40008C28C /* RegisterViewController.swift */,
+				1996795029A1CC840045D7D7 /* ProductSavedViewModel.swift */,
 			);
-			path = Controller;
+			path = Scene;
 			sourceTree = "<group>";
 		};
 		197EF3A1299BD6C20008C28C /* Adjust */ = {
 			isa = PBXGroup;
 			children = (
-				197EF3A4299BD6E20008C28C /* ViewModel */,
+				190844A129A1836500A5A47C /* Factory */,
+				1908449E29A17FF200A5A47C /* Converter */,
+				197EF3A4299BD6E20008C28C /* Scene */,
 				197EF3A3299BD6D90008C28C /* View */,
-				197EF3A2299BD6D60008C28C /* Controller */,
 			);
 			path = Adjust;
-			sourceTree = "<group>";
-		};
-		197EF3A2299BD6D60008C28C /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				197EF3D7299C0C2B0008C28C /* AdjustViewController.swift */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		197EF3A3299BD6D90008C28C /* View */ = {
 			isa = PBXGroup;
 			children = (
 				197EF3A7299BD6EF0008C28C /* AdjustView.swift */,
+				1908449C29A175CE00A5A47C /* StateCell.swift */,
+				190844A429A187CB00A5A47C /* AlertState.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		197EF3A4299BD6E20008C28C /* ViewModel */ = {
+		197EF3A4299BD6E20008C28C /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				197EF3D7299C0C2B0008C28C /* AdjustViewController.swift */,
 				197EF3A5299BD6EB0008C28C /* AdjustViewModel.swift */,
 			);
-			path = ViewModel;
+			path = Scene;
 			sourceTree = "<group>";
 		};
 		197EF3AB299BD74C0008C28C /* Total */ = {
 			isa = PBXGroup;
 			children = (
-				197EF3AE299BD7680008C28C /* View */,
-				197EF3AD299BD75F0008C28C /* ViewModel */,
-				197EF3AC299BD7590008C28C /* Controller */,
+				1954BFE029A29DFB006B97B7 /* Converter */,
+				197EF3AE299BD7680008C28C /* Factory */,
+				197EF3AD299BD75F0008C28C /* View */,
+				197EF3AC299BD7590008C28C /* Scene */,
 			);
 			path = Total;
 			sourceTree = "<group>";
 		};
-		197EF3AC299BD7590008C28C /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				197EF3B3299BD77C0008C28C /* TotalViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		197EF3AD299BD75F0008C28C /* ViewModel */ = {
+		197EF3AC299BD7590008C28C /* Scene */ = {
 			isa = PBXGroup;
 			children = (
 				197EF3B1299BD7760008C28C /* TotalViewModel.swift */,
+				197EF3B3299BD77C0008C28C /* TotalViewController.swift */,
 			);
-			path = ViewModel;
+			path = Scene;
 			sourceTree = "<group>";
 		};
-		197EF3AE299BD7680008C28C /* View */ = {
+		197EF3AD299BD75F0008C28C /* View */ = {
 			isa = PBXGroup;
 			children = (
 				197EF3AF299BD7710008C28C /* TotalView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		197EF3AE299BD7680008C28C /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				1954BFDE29A2978C006B97B7 /* TotalFactory.swift */,
+			);
+			path = Factory;
 			sourceTree = "<group>";
 		};
 		197EF3B6299BDF840008C28C /* AppDelegate */ = {
@@ -346,6 +405,7 @@
 			isa = PBXGroup;
 			children = (
 				197EF3C7299BEC0F0008C28C /* TableViewProvider.swift */,
+				1908449229A13D7300A5A47C /* PickerViewProvider.swift */,
 				197EF3C9299BEC710008C28C /* Reusable.swift */,
 			);
 			path = DataProvider;
@@ -462,6 +522,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1996795329A1E3F50045D7D7 /* Settings.bundle in Resources */,
 				197EF382299BCAE40008C28C /* LaunchScreen.storyboard in Resources */,
 				197EF3E3299C191F0008C28C /* Localizable.strings in Resources */,
 				197EF37F299BCAE40008C28C /* Assets.xcassets in Resources */,
@@ -476,9 +537,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				197EF3A0299BD6BE0008C28C /* RegisterView.swift in Sources */,
+				1908449329A13D7300A5A47C /* PickerViewProvider.swift in Sources */,
 				197EF3D6299C02600008C28C /* StateService.swift in Sources */,
 				197EF3C8299BEC0F0008C28C /* TableViewProvider.swift in Sources */,
 				197EF3CF299BFCD80008C28C /* ListTableViewCell.swift in Sources */,
+				190844A329A1836D00A5A47C /* AdjustFactory.swift in Sources */,
 				197EF394299BD6690008C28C /* ListViewModel.swift in Sources */,
 				197EF3D1299C00170008C28C /* CoreDataService.swift in Sources */,
 				197EF3DA299C12DB0008C28C /* String+Format.swift in Sources */,
@@ -489,18 +552,27 @@
 				197EF3CA299BEC710008C28C /* Reusable.swift in Sources */,
 				197EF3D4299C02020008C28C /* ProductService.swift in Sources */,
 				197EF39C299BD6B40008C28C /* RegisterViewController.swift in Sources */,
+				1908449929A14F6300A5A47C /* RegisterConverter.swift in Sources */,
 				197EF39E299BD6BA0008C28C /* RegisterViewModel.swift in Sources */,
 				197EF3DF299C188D0008C28C /* UIImage+Custom.swift in Sources */,
+				1954BFDF29A2978C006B97B7 /* TotalFactory.swift in Sources */,
+				1908449B29A15E5400A5A47C /* ImagePickerAlertController.swift in Sources */,
+				1908449D29A175CE00A5A47C /* StateCell.swift in Sources */,
 				197EF3A8299BD6EF0008C28C /* AdjustView.swift in Sources */,
 				197EF3B2299BD7760008C28C /* TotalViewModel.swift in Sources */,
 				197EF3C0299BE3830008C28C /* ListingFactory.swift in Sources */,
 				197EF3BD299BE2220008C28C /* Product.xcdatamodeld in Sources */,
+				190844A029A1800100A5A47C /* AdjustConverter.swift in Sources */,
+				1954BFE229A29E03006B97B7 /* TotalConverter.swift in Sources */,
 				197EF3B4299BD77C0008C28C /* TotalViewController.swift in Sources */,
 				197EF3C5299BE8D10008C28C /* ListConverter.swift in Sources */,
+				1996795129A1CC840045D7D7 /* ProductSavedViewModel.swift in Sources */,
 				197EF3A6299BD6EB0008C28C /* AdjustViewModel.swift in Sources */,
+				1908449629A14EEB00A5A47C /* RegisterFactory.swift in Sources */,
 				197EF396299BD66F0008C28C /* ListView.swift in Sources */,
 				197EF3B0299BD7710008C28C /* TotalView.swift in Sources */,
 				197EF376299BCAE30008C28C /* AppDelegate.swift in Sources */,
+				190844A529A187CB00A5A47C /* AlertState.swift in Sources */,
 				197EF378299BCAE30008C28C /* SceneDelegate.swift in Sources */,
 				197EF392299BD5FD0008C28C /* TabBar.swift in Sources */,
 				197EF3CD299BF90B0008C28C /* UIView+addSubview.swift in Sources */,
@@ -652,8 +724,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BrunoGiulianoJoaoRenato/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ComprasUSA;
@@ -667,6 +740,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.giulianoAccorsi.BrunoGiulianoJoaoRenato;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -678,8 +752,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BrunoGiulianoJoaoRenato/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ComprasUSA;
@@ -693,6 +768,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.giulianoAccorsi.BrunoGiulianoJoaoRenato;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

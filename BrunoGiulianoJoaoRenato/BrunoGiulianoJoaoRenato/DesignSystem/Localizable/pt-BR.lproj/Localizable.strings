@@ -5,7 +5,37 @@
   Created by Giuliano Accorsi on 14/02/23.
   
 */
-
+// Mark: Tab Bar
 "TabBar.List" = "Compras";
 "TabBar.Adjust" = "Ajustes";
 "TabBar.Total" = "Total da Compra";
+// Mark: EmptyState View
+"EmptyStateView.Text" = "Sua lista está vazia!";
+// Mark: Register View
+"RegisterView.PlaceholderNameProduct" = "Nome do Produto";
+"RegisterView.PlaceholderStateProduct" = "Estado da Compra";
+"RegisterView.PlaceholderValueProduct" = "Valor (U$)";
+"RegisterView.Button.Register" = "Cadastrar";
+"RegisterView.Button.Edit" = "Editar";
+"RegisterView.Switch.Card" = "Cartão?";
+// Mark: ImagePickerAlertController
+"ImagePickerAlert.photoTitle" = "Escolher foto";
+"ImagePickerAlert.cameraTitle" = "Tirar foto";
+"ImagePickerAlert.cancelButton" = "Cancelar";
+// Mark: AdjustView
+"AdjustView.Quotation" = "Cotação do dólar (R$):";
+"AdjustView.IOF" = "IOF (%):";
+"AdjustView.LabelTax"= "Impostos por estados";
+"AdjustView.ButtonState" = "Adicionar Estado";
+// Mark: AlertState
+"AlertState.Title.Add" = "Adicionar Estado";
+"AlertState.Title.Edit" = "Editar Estado";
+"AlertState.Textfield.State" = "Nome do estado";
+"AlertState.Textfield.Tax" = "Imposto";
+"AlertState.Button.Add" = "Adicionar";
+"AlertState.Button.Cancel" = "Cancelar";
+// Mark: TotalView
+"TotalView.Dollar.Title" = "Total em Dólar";
+"TotalView.Real.Title" = "Total em Reais";
+
+

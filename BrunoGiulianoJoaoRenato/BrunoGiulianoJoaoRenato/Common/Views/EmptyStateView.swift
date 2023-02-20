@@ -11,6 +11,7 @@ final class EmptyStateView: UIView {
     private let messageLabel: UILabel = {
         let label = UILabel()
         label.textColor = .label
+        label.font = UIFont.systemFont(ofSize: 18, weight: .medium)
         label.numberOfLines = 0
         label.textAlignment = .center
 

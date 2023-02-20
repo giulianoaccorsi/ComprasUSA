@@ -22,17 +22,17 @@ final class TabBar: UITabBarController {
             viewControllers = [
                 createNavController(
                     for: ListingFactory.make(),
-                    title: Strings.listTabBar, image: carImage
+                    title: Strings.TabBar.list, image: carImage
                 ),
 
                 createNavController(
-                    for: AdjustViewController(),
-                    title: Strings.adjustTabBar, image: systemImage
+                    for: AdjustFactory.make(),
+                    title: Strings.TabBar.adjust, image: systemImage
                 ),
 
                 createNavController(
-                    for: TotalViewController(),
-                    title: Strings.totalTabBar, image: bag
+                    for: TotalFactory.make(),
+                    title: Strings.TabBar.total, image: bag
                 )
             ]
         }
