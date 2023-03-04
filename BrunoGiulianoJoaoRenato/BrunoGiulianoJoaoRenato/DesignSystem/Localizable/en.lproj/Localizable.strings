@@ -38,4 +38,8 @@
 // Mark: TotalView
 "TotalView.Dollar.Title" = "Total in Dollars";
 "TotalView.Real.Title" = "Total in Reais";
+// Mark: RegisterViewController
+"RegisterViewController.Title" = "Unable to register product!";
+"RegisterViewController.Message" = "Please fill in all TextFields!";
+"RegisterViewController.Button" = "Cancel";
 

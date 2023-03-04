@@ -31,6 +31,12 @@ enum Strings {
         @Localizable static var text = "EmptyStateView.Text"
     }
 
+    enum RegisterViewController {
+        @Localizable static var title = "RegisterViewController.Title"
+        @Localizable static var message = "RegisterViewController.Message"
+        @Localizable static var button = "RegisterViewController.Button"
+    }
+
     enum RegisterView {
         @Localizable static var name = "RegisterView.PlaceholderNameProduct"
         @Localizable static var state = "RegisterView.PlaceholderStateProduct"

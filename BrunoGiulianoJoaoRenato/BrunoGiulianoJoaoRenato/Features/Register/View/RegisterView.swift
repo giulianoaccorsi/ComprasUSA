@@ -12,6 +12,7 @@ protocol RegisterViewProtocol: UIView {
     func setImage(_ image: UIImage)
     func updateProduct(_ product: ProductSavedViewModel)
     func fetchStates(viewModels: [String])
+    func reload()
 }
 
 protocol RegisterViewDelegate: AnyObject {
@@ -216,11 +217,19 @@ final class RegisterView: UIView {
     }
 
     @objc func textFieldTapped() {
-        textFieldState.inputView = pickerView
+        if pickerViewProvider.viewModels.count > 0 {
+            textFieldState.inputView = pickerView
+        }else {
+            textFieldState.inputView = UIView()
+        }
     }
 
     @objc private func tappedImage() {
         delegate?.didTapImage()
+    }
+
+    func reload() {
+        textFieldState.reloadInputViews()
     }
 }
 

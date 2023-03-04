@@ -8,15 +8,6 @@
 import Foundation
 import CoreData
 
-struct ProductRegisterViewModel {
-    let name: String
-    let value: Double
-    let isCard: Bool
-    let image: Data?
-    let state: String
-    let product: Product?
-}
-
 protocol RegisterViewModelLogic {
     func fetchStates()
     func saveProduct(name: String, value: Double, isCard: Bool, image: Data?, state: String)
@@ -25,6 +16,11 @@ protocol RegisterViewModelLogic {
 }
 
 final class RegisterViewModel {
+    enum Finished {
+        case error
+        case success
+    }
+
     private(set) var states: [State] = []
     weak var display: RegisterViewControllerDisplayble?
 
@@ -41,6 +37,14 @@ final class RegisterViewModel {
     private func getState(_ name: String) -> State? {
         states.filter { $0.name == name }.first
     }
+
+    private func isFormFilled(name: String?, value: Double?) -> Bool {
+        guard let name, !name.isEmpty,
+              let value, !value.isZero else {
+            return false
+        }
+        return true
+    }
 }
 
 extension RegisterViewModel: RegisterViewModelLogic {
@@ -50,15 +54,25 @@ extension RegisterViewModel: RegisterViewModelLogic {
     }
 
     func saveProduct(name: String, value: Double, isCard: Bool, image: Data?, state: String) {
-        if let state = getState(state) {
-            productRepository.saveProduct(name: name, value: value, isCard: isCard, image: image, state: state)
+        if isFormFilled(name: name, value: value) {
+            if let state = getState(state) {
+                productRepository.saveProduct(name: name, value: value, isCard: isCard, image: image, state: state)
+                display?.completedRegister(state: .success)
+                return
+            }
         }
+        display?.completedRegister(state: .error)
     }
 
     func editProduct(product: Product, _ name: String, _ value: Double, _ isCard: Bool, _ image: Data?, _ state: String) {
-        if let state = getState(state) {
-            productRepository.editProduct(id: product.objectID, name: name, value: value, isCard: isCard, image: image, state: state)
+        if isFormFilled(name: name, value: value) {
+            if let state = getState(state) {
+                productRepository.editProduct(id: product.objectID, name: name, value: value, isCard: isCard, image: image, state: state)
+                display?.completedRegister(state: .success)
+                return
+            }
         }
+        display?.completedRegister(state: .error)
     }
 
     func updateProduct(_ product: Product) {
